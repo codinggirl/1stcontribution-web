@@ -1,0 +1,12 @@
+.Footer {
+    padding: 40px 0;
+    color: white;
+}
+
+.Footer li {
+    list-style: none;
+}
+
+.Footer a {
+    color: white;
+}

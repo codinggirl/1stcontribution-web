@@ -3,7 +3,7 @@ import './App.css';
 import LinkButton from './components/LinkButton/LinkButton';
 import Navbar from './components/Navbar/Navbar';
 import CardsContainer from './components/ProjectList/CardsContainer';
-import SocialShare from './components/SocialShare/SocialShare';
+import Footer from './components/Footer/Footer.jsx';
 
 class App extends Component {
     render() {
@@ -15,7 +15,7 @@ class App extends Component {
                 </div>
                 <LinkButton />
                 <CardsContainer />
-                <SocialShare/>
+                <Footer />
             </div>
         );
     }
