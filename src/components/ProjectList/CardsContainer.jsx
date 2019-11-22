@@ -3,7 +3,7 @@ import Select from 'react-select';
 import each from 'lodash/each'
 
 import Card from './ProjectsCards';
-import projectList from './listOfProjects';
+import projectList from '../../projects';
 
 import './css/cards-container.css';
 import './css/search.css';
