@@ -1,0 +1,22 @@
+sudo: false
+node_js:
+  - 8
+  - 10
+  - 12
+
+jobs:
+  include:
+    - stage: build
+      script: npm run build
+    - stage: deploy
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: build
+  repo: 1stcontribution/1stcontribution.github.io
+  target_branch: master
+  on:
+    branch: master
