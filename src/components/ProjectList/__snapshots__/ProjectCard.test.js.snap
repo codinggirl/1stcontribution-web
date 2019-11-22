@@ -26,9 +26,6 @@ exports[`renders a project card 1`] = `
       className="Card-Body"
     >
       <div
-        className="Card-Tag"
-      />
-      <div
         className="Card-Description"
       >
         <p>
@@ -37,9 +34,12 @@ exports[`renders a project card 1`] = `
         </p>
       </div>
       <div
+        className="Card-Tag"
+      />
+      <div
         className="Card-Link"
       >
-        Go to Project
+        View Project
       </div>
     </div>
   </a>
