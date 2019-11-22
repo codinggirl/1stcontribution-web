@@ -2,7 +2,7 @@ import React from 'react';
 import Select from 'react-select';
 import each from 'lodash/each'
 
-import Card from './ProjectsCards';
+import Card from './ProjectCard';
 import projectList from '../../projects';
 
 import './css/cards-container.css';
