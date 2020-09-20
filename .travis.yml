@@ -8,8 +8,7 @@ node_js:
 
 jobs:
   include:
-    - stage: build
-      script: npm run build
+    - stage: test
     - stage: deploy
 
 deploy:
@@ -18,7 +17,7 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   local_dir: build
-  repo: 1stcontribution/1stcontribution.github.io
-  target_branch: master
+  repo: codinggirl/letscontribute-web
+  target_branch: gh-pages
   on:
     branch: master
