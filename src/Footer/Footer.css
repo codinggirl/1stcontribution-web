@@ -1,0 +1,13 @@
+.Footer {
+    padding: 40px;
+    color: white;
+    text-align: left;
+}
+
+.Footer span {
+    text-align: center;
+}
+
+.Footer a {
+    color: white;
+}

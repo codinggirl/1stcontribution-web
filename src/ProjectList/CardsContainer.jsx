@@ -3,11 +3,10 @@ import Select from 'react-select';
 import each from 'lodash/each'
 
 import Card from './ProjectCard';
-import projectList from '../../projects';
+import projectList from '../projects';
 
 import './css/cards-container.css';
 import './css/search.css';
-import 'react-select/dist/react-select.css';
 
 export default class CardsContainer extends React.Component {
   constructor(props) {

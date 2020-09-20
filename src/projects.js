@@ -512,7 +512,7 @@ const projectList = [
   },
   {
     name: 'Light Table',
-    imageSrc: 'http://lighttable.com/images/logo.png',
+    imageSrc: 'https://avatars1.githubusercontent.com/u/5877010?s=200&v=4',
     githubLink: 'https://github.com/LightTable',
     description: 'Light Table is a next generation code editor that connects you to your creation with instant feedback. Light Table is very customizable and can display anything a Chromium browser can.',
     tags: ['clojurescript', 'ide', 'editor', 'clojure', 'lighttable', 'clojure-development']
@@ -600,7 +600,7 @@ const projectList = [
     githubLink: 'https://github.com/CyberNinjas/TallyCTF/contribute',
     description: 'Capture-The-Flag Scoreboard & CTF Event Running Software',
     tags: ['ctf', 'ctf-scoreboard', 'ctf-platform', 'JavaScript']
-  }, 
+  },
   {
     name: 'Airform',
     imageSrc: 'https://avatars1.githubusercontent.com/u/24883621',
