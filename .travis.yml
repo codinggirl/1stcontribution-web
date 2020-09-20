@@ -1,4 +1,5 @@
-sudo: false
+os: linux
+dist: xenial
 language: node_js
 
 node_js:
@@ -9,15 +10,19 @@ node_js:
 jobs:
   include:
     - stage: test
-    - stage: deploy
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  local_dir: build
-  repo: codinggirl/letscontribute-web
-  target_branch: gh-pages
-  on:
-    branch: master
+    - stage: "Deploy to gh-pages"
+      node_js: 12
+      script: npm run build
+      deploy:
+        provider: pages
+        strategy: git
+        skip_cleanup: true
+        token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep_history: true
+        local_dir: build
+        project_name: letscontribute-web
+        repo: codinggirl/letscontribute
+        target_branch: gh-pages
+        deployment_file: true
+        on:
+          branch: master
