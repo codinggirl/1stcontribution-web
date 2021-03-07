@@ -14,7 +14,7 @@
     "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-select": "^3.1.0"
+    "react-select": "^4.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
